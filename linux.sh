@@ -11,12 +11,12 @@ echo 'Starting Linux Configuration Script -- Kevin --'
 
 apt-get install vim #install vim
 apt-get install git #install git
-apt-get install gimp #install git
-apt-get install libxss1 libappindicator1 libindicator7
+# apt-get install gimp #install git
+# apt-get install libxss1 libappindicator1 libindicator7
 
 #install chrome
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-dpkg -i google-chrome*.deb
+# wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+# dpkg -i google-chrome*.deb
 
 #install nvm
 wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
