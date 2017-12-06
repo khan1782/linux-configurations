@@ -1,3 +1,4 @@
+" kevin vim stuff
 syntax on
 set number
 colorscheme seoul256 

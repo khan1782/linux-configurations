@@ -8,11 +8,21 @@ if !  grep -q "# kevin bash stuff" ~/.bashrc ; then
   cat bashrc >> ~/.bashrc	 
 	
 else
-
 	echo "bash aliases have already been added"
-
 fi
 
-# cat bashrc >> test.txt
+# check if vim configurations have been added already
+if ! grep -q '" kevin vim stuff' ~/.vimrc ; then
+
+	# if vim stuff hasn't been added already append them to ~/.vimrc
+	echo "adding vim stuff"
+	cat vimrc >> ~/.vimrc	
+  
+else
+	echo "vim stuff has already been added"
+fi
+
+
+
 
 echo 'Ending Linux Configuration Script -- Han --'
