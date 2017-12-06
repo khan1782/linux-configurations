@@ -1,10 +1,19 @@
 #!/bin/bash
-if [[ $EUID -ne 0 ]]; then
-	echo "This script must be run as root" 
-	exit 1
+
+# check if in root
+if [ "$EUID" -ne 0 ]
+	then echo "Please run as root"
+	exit
 fi
+
+
 echo 'Starting Linux Configuration Script -- Kevin --'
 
+#install vim
+apt-get install vim
+
+#install nvm
+wget -qO- https://raw.githubusercontent.com/creationix/nvm/v0.33.6/install.sh | bash
 
 
 # check if aliases have been added already
