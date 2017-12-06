@@ -1,4 +1,11 @@
+#!/bin/bash
+if [[ $EUID -ne 0 ]]; then
+	echo "This script must be run as root" 
+	exit 1
+fi
 echo 'Starting Linux Configuration Script -- Kevin --'
+
+
 
 # check if aliases have been added already
 if !  grep -q "# kevin bash stuff" ~/.bashrc ; then
@@ -22,7 +29,13 @@ else
 	echo "vim stuff has already been added"
 fi
 
+# add vim javascript to vim bundle
+git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javascript
 
+# add vim jsx to vim bundle
+git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
+
+#add scss to vim bundle
 
 
 echo 'Ending Linux Configuration Script -- Han --'
