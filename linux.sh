@@ -53,10 +53,13 @@ git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javas
 # add vim jsx to vim bundle
 git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
 
+# commmenting
+git clone https://github.com/scrooloose/nerdcommenter.git ~/.vim/bundle/nerdcommenting
 
+# nerd tree
 git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
 
 #add scss to vim bundle
-
+#to do
 
 echo 'Ending Linux Configuration Script -- Han --'
