@@ -53,6 +53,9 @@ git clone https://github.com/pangloss/vim-javascript.git ~/.vim/bundle/vim-javas
 # add vim jsx to vim bundle
 git clone https://github.com/mxw/vim-jsx.git ~/.vim/bundle/vim-jsx
 
+
+git clone https://github.com/scrooloose/nerdtree.git ~/.vim/bundle/nerdtree
+
 #add scss to vim bundle
 
 
