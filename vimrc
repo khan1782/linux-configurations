@@ -37,6 +37,8 @@ filetype plugin on
 
 " NERDTree configuration
 map <Leader>n :NERDTreeToggle<CR>
+nnoremap <BS> :NERDTreeToggle<CR>
+
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 
@@ -55,6 +57,11 @@ map <Leader>j <C-w>j
 map <Leader>k <C-w>k
 map <Leader>l <C-w>l
 map <Leader>h <C-w>h
+
+nnoremap <nowait> [ <C-w>h
+map ] <C-w>l
+nnoremap <S-[> <C-w>j
+nnoremap <S-]> <C-w>k
 
 " save to system every time for web pack dev server
 set backupcopy=yes
